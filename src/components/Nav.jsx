@@ -31,4 +31,4 @@ export default function Nav() {
   )
 }
 
-const a = "block text-lg text-center p-2 hover:text-sky-400 transition-all text-slate-200"
+const a = "block text-lg text-center text-neutral-300 p-2 hover:text-white transition-all text-slate-200"
