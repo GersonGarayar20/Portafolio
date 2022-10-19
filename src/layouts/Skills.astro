@@ -1,16 +1,17 @@
 ---
 import Skill from "../components/Skill.astro";
 
+
+
+//<img class="absolute w-96 h-96 -bottom-20 -left-20 opacity-10" src="react.svg" alt="">
 ---
 
 <section id="skills" 
-class="look md:py-16 py-8 gap-8 flex flex-col items-center bg-neutral-50 relative overflow-hidden">
+class="md:px-12 md:py-16 px-8 py-8 // flex flex-col gap-8">
 
-  <img class="absolute w-96 h-96 -bottom-20 -left-20 opacity-10" src="react.svg" alt="">
-  
-  <h2 class="text-4xl text-rose-500 text-center uppercase font-semibold">skills</h2>
+  <h2 class="text-4xl md:text-left text-center text-slate-800">Skills</h2>
 
-  <div class="flex justify-center gap-2 flex-wrap md:w-4/5">
+  <div class="flex gap-2 md:justify-start justify-center flex-wrap">
     <Skill image="html-5.svg" name="HTML"></Skill>
     <Skill image="css3.svg" name="CSS"></Skill>
     <Skill image="javascript.svg" name="JavaScript"></Skill>

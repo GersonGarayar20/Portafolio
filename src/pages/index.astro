@@ -6,7 +6,7 @@ import Projects from '../layouts/Projects.astro';
 import Skills from '../layouts/Skills.astro';
 import Footer from '../layouts/Footer.astro';
 import About from '../layouts/About.astro';
-
+import "@fontsource/poppins"
 /*
 
 
@@ -14,15 +14,27 @@ import About from '../layouts/About.astro';
 
 */
 
-
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Gerson Garayar">
 	<Nav client:load></Nav>
 	<Header></Header>
-	<About></About>
-	<Skills></Skills>
-	<Projects></Projects>
-	<Footer></Footer>
+	<main class="w-full bg-neutral-50">
+		<Projects></Projects>
+		
+		<div class="max-w-7xl m-auto // md:flex">
+			<div class="md:px-12 md:py-16 px-8 py-8 // md:w-1/2 // flex justify-center">
+				<img class="object-cover object-top rounded-full md:rounded border md:w-96 md:h-full w-64 h-64" src="gerson.jpg" alt="">
+			</div>
+			<div>
+				<About></About>
+				<Skills></Skills>
+			</div>
+		</div>
+		<Footer></Footer>
+	</main>
 </Layout>
 
+<style>
+	body { font-family: "Poppins", sans-serif; }
+</style>

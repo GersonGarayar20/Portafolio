@@ -32,10 +32,11 @@ const myProjects = [
 
 
 <section id="projects" 
-class="look md:py-16 py-8 gap-8 flex flex-col items-center bg-neutral-100">
+class="max-w-7xl m-auto // md:px-12 md:py-16 px-8 py-8 // flex flex-col gap-8">
   
-  <h2 class="text-4xl text-rose-500 text-center uppercase font-semibold">projects</h2>
-  <div class="md:flex flex-wrap justify-center gap-4">
+  <h2 class="text-4xl md:text-left text-center text-slate-800">Projects</h2>
+
+  <div class="grid gap-8 lg:grid-cols-3 md:grid-cols-2">
     {
       myProjects.map(el=>(
         <Card href={el.url} image={el.img} title={el.title} git={el.github}></Card>
