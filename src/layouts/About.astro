@@ -5,9 +5,17 @@ const acerca = "Hola soy Gerson Garayar, me considero una persona creativa, con 
 
 
 <section id="about" 
-class="md:px-12 md:py-16 px-8 py-8 // flex flex-col gap-8">
+class="max-w-7xl m-auto // md:px-12 md:py-16 px-8 py-8 // flex flex-col md:flex-row md:items-start items-center gap-8">
+
+  <div class="w-64 h-64">
+    <img class="object-cover object-top rounded border border-neutral-700 w-full h-full " src="gerson.jpg" alt="gerson">
+  </div>
   
-  <h2 class="text-4xl md:text-left text-center text-slate-800">About</h2>
-  <p class="text-lg md:text-left text-center">{acerca}</p>
+  <div class="flex flex-col gap-8 flex-wrap">
+    <div class="md:w-28 md:hover:w-32 md:border-b-2 border-transparent hover:border-orange-400 transition-all duration-200">
+      <h2 class="text-4xl md:text-left text-center text-neutral-200">About</h2>
+    </div>
+    <p class="text-neutral-400 md:text-left text-center md:w-96">{acerca}</p>
+  </div>
 
 </section>
