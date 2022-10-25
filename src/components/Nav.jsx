@@ -20,7 +20,7 @@ export default function Nav() {
         <ul className='w-full flex flex-col gap-2 md:flex-row justify-center bg-neutral-900/90'>
           <li><a onClick={handleClick} className={a} href="#home">Home</a></li>
           <li><a onClick={handleClick} className={a} href="#projects">Projects</a></li>
-          <li><a onClick={handleClick} className={a} href="#about">About</a></li>
+          <li><a onClick={handleClick} className={a} href="#about">About me</a></li>
           <li><a onClick={handleClick} className={a} href="#skills">Skills</a></li>
         </ul>
       </nav>
@@ -38,4 +38,4 @@ export default function Nav() {
   )
 }
 
-const a = "block text-lg text-center text-neutral-300 p-2 hover:text-white transition-all"
+const a = "block text-lg text-center text-neutral-300 p-2 hover:text-orange-400 transition-all"

@@ -1,50 +1,16 @@
 ---
-import Card from "../components/Card.astro";
-
-const myProjects = [
-  {
-    id: 1,
-    title: "My List",
-    url: "https://my-list-react.netlify.app/",
-    github: "https://github.com/GersonGarayar20/MyList",
-    img: "my-list.png",
-    tag:["react"]
-  },
-  {
-    id: 2,
-    title: "Pokemon",
-    url: "https://pokemon-react-js.netlify.app/",
-    github: "https://github.com/GersonGarayar20/Pokemon",
-    img: "pokemon.png",
-    tag:["react"]
-  },
-  {
-    id: 3,
-    title: "Agenda",
-    url: "https://agenda-react-js.netlify.app/",
-    github: "https://github.com/GersonGarayar20/agenda",
-    img: "agenda.png",
-    tag:["react"]
-  },
-]
-
+import ProjectsList from "../components/ProjectsList";
 ---
 
 
-<section id="projects" 
-class="max-w-7xl m-auto // md:px-12 md:py-16 px-4 py-8 // flex flex-col gap-8">
+<section id="projects" class="max-w-7xl m-auto // md:px-12 md:py-16 px-2 py-8 // flex flex-col gap-8">
+
   <div class="md:w-36 md:hover:w-40 md:border-b-2 border-transparent hover:border-orange-400 transition-all duration-200">
     <h2 class="text-4xl md:text-left text-center text-neutral-200">Projects</h2>
-
   </div>
 
-  <div class="grid gap-8 lg:grid-cols-3 md:grid-cols-2">
-    {
-      myProjects.map(el=>(
-        <Card href={el.url} image={el.img} title={el.title} git={el.github}></Card>
-      ))
-    }
-  </div>
+  <ProjectsList client:load/>
+
 </section>
 
 
