@@ -2,7 +2,7 @@
 const { image, name } = Astro.props
 ---
 
-<div class="hover:bg-white/5 rounded p-4 flex items-center gap-4">
+<div class="p-4 flex items-center gap-4">
   <img class="w-12 h-12" src={image} alt={name}>
   <p class="text-neutral-300">{name}</p>
 </div>
