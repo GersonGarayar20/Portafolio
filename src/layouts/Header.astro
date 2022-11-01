@@ -6,32 +6,29 @@ import Redes from "../components/Redes.astro";
 
 <div class="fixed w-full h-screen -z-10 bg-neutral-900"></div>
 <img class="fixed w-full h-screen -z-10 object-cover" src="fondo.webp" srcset="fondo.webp, fondo-small.webp 768w" alt="fondo">
-<div class="fixed w-full h-screen -z-10 bg-gradient-to-r from-neutral-800 to-neutral-900/50"></div>
 
 
-<header id="home">
 
-  <h1 class="text-4xl md:text-6xl text-center font-semibold text-neutral-100 md:text-left">I`M GERSON A<br/>
-    <span class="bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">WEB DEVELOPER</span>
-  </h1>
+<header id="home" class="w-full h-screen bg-gradient-to-t from-neutral-900 to-neutral-900/5">
 
-  <div class="flex justify-center md:justify-start gap-4">
-    <Redes></Redes>
-    <button class="bg-white/40 hover:bg-red-500 hover:text-white px-4 rounded transition-all">Download CV</button>
-  </div>
+  <section class="h-full max-w-7xl m-auto p-12 flex flex-col gap-12 justify-between md:justify-center">
+
+      <h1 class="text-4xl md:text-6xl text-center font-semibold text-neutral-100 md:text-left">I`M GERSON A<br/>
+        <span class="bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">WEB DEVELOPER</span>
+      </h1>
+    
+      <div class="flex justify-center md:justify-start gap-4">
+        <Redes></Redes>
+        <button class="bg-white/40 hover:bg-red-500 hover:text-white px-4 rounded transition-all">Download CV</button>
+      </div>
+
+  </section>
+
   
 </header>
 
 <style>
-  header{
-    @apply
-    w-full h-screen
-    max-w-7xl m-auto
-    p-12
-    flex flex-col gap-12 justify-between md:justify-center
-  }
 
-  /* animaciones */
   h1{
     animation-name: inicio;
     animation-duration: 1s;

@@ -4,7 +4,7 @@ export default function ProjectCard({href, image, title, git}) {
   return (
     <div>
       <a href={href} className="block" target="_blank" rel="noopener">
-        <div className="border border-neutral-700 md:hover:scale-105 transition-all duration-200 ease-linear overflow-hidden">
+        <div className="rounded-lg md:hover:scale-105 transition-all duration-200 ease-linear overflow-hidden">
           <img src={image} className="object-cover object-top aspect-video" alt={title} />
         </div>
       </a>
