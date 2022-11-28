@@ -38,4 +38,4 @@ export default function Nav() {
   )
 }
 
-const a = "block text-lg text-center text-neutral-300 p-2 hover:text-orange-400 transition-all"
+const a = "block text-lg text-center text-neutral-400 p-2 hover:text-white transition-all"
