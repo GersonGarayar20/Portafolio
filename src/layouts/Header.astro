@@ -1,30 +1,33 @@
 ---
 import Redes from "../components/Redes.astro";
 
+// fbbf24 amber-400
+// f59e0b amber-500
 ---
 
 
 <div class="fixed w-full h-screen -z-10 bg-neutral-900"></div>
-<img class="fixed w-full h-screen -z-10 object-cover" src="fondo.webp" srcset="fondo.webp, fondo-small.webp 768w" alt="fondo">
-
-
+<img class="fixed w-full h-screen -z-10 object-cover" src="fondo.webp" alt="fondo">
 
 <header id="home" class="w-full h-screen bg-gradient-to-t from-neutral-900 to-neutral-900/5">
 
   <section class="h-full max-w-7xl m-auto p-12 flex flex-col gap-12 justify-between md:justify-center">
 
-      <h1 class="text-4xl md:text-6xl text-center font-semibold text-neutral-100 md:text-left">I`M GERSON A<br/>
-        <span class="bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">WEB DEVELOPER</span>
+      <h1 class="text-4xl md:text-6xl text-center font-semibold text-neutral-100 md:text-left">GERSON GARAYAR<br/>
+        <span>FRONTEND DEVELOPER</span>
       </h1>
-    
+      
       <div class="flex justify-center md:justify-start flex-wrap gap-4 items-center">
         <Redes></Redes>
-        <button class="bg-white/40 hover:bg-red-500 hover:text-white px-4 py-2 rounded transition-all">Download CV</button>
+        <a title="Descargar CV" class="bg-white/40 hover:bg-red-500 cursor-pointer hover:text-white px-4 py-2 rounded transition-all">Download CV</a>
       </div>
 
   </section>
 
 </header>
+
+
+
 
 <style>
 
@@ -40,7 +43,24 @@ import Redes from "../components/Redes.astro";
       translate: -50px;
     }
     
-
   }
+
+  span{
+    overflow: hidden;
+    background: linear-gradient(90deg, #f97316, #fbbf24, #f97316);
+    background-size: 200%;
+    animation: animate 4s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @keyframes animate {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
 
 </style>
